@@ -81,7 +81,7 @@ echo "============================== 2.3.3 unique_vm_harden_nginxplus ==========
 
 if [ "$HTTP_LAYER7" == "yes" ]; then
 
-grep working_directory /etc/nginx/nginx.conf
+grep -ir "working_directory*" /etc/nginx
 echo "============================== 2.3.4 unique_vm_harden_nginxplus =============================="
 
 else
